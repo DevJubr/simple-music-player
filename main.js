@@ -89,8 +89,8 @@ music.addEventListener('timeupdate', (e) => {
   if(duration){
   totaltim.textContent = `${total_min}:${total_sec}`;}
 
-  let shuru_min = Math.floor(porgrs / 60);
-  let shuru_sec = Math.floor(porgrs % 60);
+  let shuru_min = Math.floor(currentTime / 60);
+  let shuru_sec = Math.floor(currentTime % 60);
   if(shuru_sec < 10){
     shuru_sec = `0${shuru_sec}`;
   }
